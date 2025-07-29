@@ -1,0 +1,4 @@
+cobs
+pyserial
+rscp_protobuf
+setuptools

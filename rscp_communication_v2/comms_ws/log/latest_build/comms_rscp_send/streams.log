@@ -1,0 +1,37 @@
+[1.868s] Invoking command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp_send build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log --single-version-externally-managed install_data
+[2.356s] running egg_info
+[2.357s] creating ../../build/comms_rscp_send/comms_rscp_send.egg-info
+[2.358s] writing ../../build/comms_rscp_send/comms_rscp_send.egg-info/PKG-INFO
+[2.358s] writing dependency_links to ../../build/comms_rscp_send/comms_rscp_send.egg-info/dependency_links.txt
+[2.359s] writing entry points to ../../build/comms_rscp_send/comms_rscp_send.egg-info/entry_points.txt
+[2.359s] writing requirements to ../../build/comms_rscp_send/comms_rscp_send.egg-info/requires.txt
+[2.359s] writing top-level names to ../../build/comms_rscp_send/comms_rscp_send.egg-info/top_level.txt
+[2.360s] writing manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+[2.364s] reading manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+[2.365s] writing manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+[2.365s] running build
+[2.365s] running build_py
+[2.366s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build
+[2.366s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib
+[2.366s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+[2.366s] copying comms_rscp_send/rscp_response_node.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+[2.367s] copying comms_rscp_send/__init__.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+[2.367s] running install
+[2.367s] running install_lib
+[2.369s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+[2.369s] copying /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send/rscp_response_node.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+[2.369s] copying /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send/__init__.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+[2.370s] byte-compiling /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send/rscp_response_node.py to rscp_response_node.cpython-310.pyc
+[2.373s] byte-compiling /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send/__init__.py to __init__.cpython-310.pyc
+[2.374s] running install_data
+[2.374s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index
+[2.374s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index
+[2.374s] creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index/packages
+[2.374s] copying resource/comms_rscp_send -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index/packages
+[2.374s] copying package.xml -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send
+[2.374s] running install_egg_info
+[2.380s] Copying ../../build/comms_rscp_send/comms_rscp_send.egg-info to /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send-0.0.0-py3.10.egg-info
+[2.381s] running install_scripts
+[2.417s] Installing rscp_response_node script to /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/comms_rscp_send
+[2.417s] writing list of installed files to '/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log'
+[2.529s] Invoked command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send' returned '0': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp_send build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log --single-version-externally-managed install_data

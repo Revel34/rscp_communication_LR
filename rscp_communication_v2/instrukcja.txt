@@ -1,0 +1,101 @@
+------------------------------------------DLA PROGRAMU DO ODBIERANIA OD RSCP---------------------------------------------------------------------------------
+1 - otwórz terminal
+2 - cd Workspace
+3 - . install/setup.bash
+4 - ros2 run comms_rscp listener_node --ros-args -p device_type:=serial -p device_path:=/dev/pts/3 <----- wybrać odpowiednią liczbę
+
+UWAGA! Folder bash_scripts i scripts powinien znajdowac sie w HOME
+
+ABY TESTOWAĆ Z VIRTUALNYM RSPC
+1 - otworz terminal
+2 - sudo apt update && sudo apt install socat
+    socat -d -d pty,raw,echo=0 pty,raw,echo=0
+3 - zobacz na jakich portach otworzył się socat. W moim przypadku był to 2 i 3
+4 - otwórz kolejny termnial
+5 - cd workspace
+6 - . install/setup.bash
+7 - ros2 run comms_rscp listener_node --ros-args -p device_type:=serial -p device_path:=/dev/pts/2 <---- wybierz jeden z portów wskazanych przez socat. Ja dałem 2
+8 - otwórz kolejny terminal
+9 - odpal skrypt rscp_cli.cpp
+10 - używając skryptu send_rscp wyślij na port który nie jest zajęty już przez rscp listener. W moim przypadku jest to 3 np ./rscp_cli goto 38.135742 27.821507 1180 | xxd -r -p > /dev/pts/3
+10.1 - Możliwe instrukcje do wysłania to:
+ • arm_disarm       → class: ArmDisarm       fields: ['value']
+ • set_stage        → class: SetStage        fields: ['value']
+ • navigate_to_gps  → class: NavigateToGPS  fields: ['coordinate']
+ • search_area      → class: SearchArea      fields: ['center_coordinate', 'radius']
+ • start_exploration→ class: StartExploration fields: []
+10.2 - Wzór na wysyłanie to: ./rscp_cli CLASS FIELD | xxd -r -p > /dev/pts/3
+11. Na terminale z listener rscp powinienen się wyświetlić komunikat potwierdzający odbiór
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------DLA PROGRAMU DO WYSYŁANIA DO RSCP--------------------------------------------------------------------------
+1 - otwórz terminal
+2 - cd workspace
+3 - . install/setup.bash
+4 - ros2 run comms_rscp_send rscp_response_node --ros-args -p serial_port:=/path/to/serial/port -p baud:=9600  <---- zamień /path/to/serial/port na rzeczywisty adres serial portu
+5 - Aby wysłać coś używając programu można wysłać ręcznie komęde w terminalu lub poprzez odwołanie się do programu przez dany skrypt
+5.1 - Metoda manualna
+- otwórz nowy terminal
+- Można wysłać następujące komendy:
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"ack\"}'}"
+
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"task_finished\"}'}"
+
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"gps\",\"latitude\":1.234,\"longitude\":5.678,\"altitude\":0.99}'}"
+
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"distance\",\"distance\":12.34}'}"
+
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"message\",\"message\":\"Hello from rover\"}'}"
+
+ros2 topic pub -1 /send_response std_msgs/msg/String \
+"{data: '{\"type\":\"rover_status\",\"state\":\"DISARMED\",\"heading\":0.0,\
+\"battery\":{\"voltage\":12.3,\"current\":0.5,\"soc\":0.95},\
+\"coordinate\":{\"latitude\":1.234,\"longitude\":5.678,\"altitude\":0.987}}'}"
+
+5.2- Używając skryptu
+5.2.1 - Gdy skrypt jest w tym samym workspace co program i ma swój wlasny NODE
+- na samej górze skryptu daj comms_rscp_sender.rscp_response_node import send_rscp_response_sync
+- w dowolnym miejscu w kodzie daj np  rscp_send('task_finished') dzięki temu skrypt odwoła się do programu aby wyslał wiadomośc (Wszystkie możliwe response będa poniżej)
+
+5.2.2 - Gdy skrypt jest w dowolnym miejscu na komputerz i nie ma własnego NODE
+- W folderze Scripts znajdziesz skrypt rscp_helper.py daj go obok twojego skryptu
+- W twoim skrypcie na samej górze daj from rscp_helper import rscp_send
+- w dowolnym miejscu w kodzie daj np  rscp_send('task_finished') dzięki temu skrypt odwoła się do programu aby wyslał wiadomośc (Wszystkie możliwe response będa poniżej)
+
+5.2.3 - w rscp_send można poprosić program o następujące response
+
+rscp_send('ack')
+
+rscp_send('task_finished')
+
+rscp_send('gps', latitude=1.234, longitude=5.678, altitude=0.99)
+
+rscp_send('distance', distance=12.34)
+
+rscp_send('message', message="Hello from rover") 
+
+rscp_send(
+    'rover_status',
+    state='DISARMED',  # enum name or int
+    heading=0.0,
+    coordinate={'latitude':1.234,'longitude':5.678,'altitude':0.987},
+    battery={'voltage':12.3,'current':0.5,'soc':0.95},
+)
+
+TESTOWANIE WIRTUALNIE BEZ SPRZĘTU
+1 - Odpal nowy terminal
+2 - sudo apt update && sudo apt install socat
+    socat -d -d pty,raw,echo=0 pty,raw,echo=0
+3 - zobacz na jakich portach otworzył się socat. W moim przypadku był to 5 i 6
+4 - Otwórz nowy terminal
+5 - Uruchom program do wysyłania tak jak pokazano wcześniej ale w serial port daj adres portu o mniejszym numerze pokazanym w SOCAT, u mnie jest to /dev/pts/5
+6 - odpal nowy terminal
+7 - W folderze Scripts znajdziesz skrypt rscp_decoder.py pobierz i odpal używając ./rscp_decoder.py /dev/pts/6 --baud 9600       <--- Adres to port o większym numerze pokazanym w SOCAT, u mnie jest to /dev/pts/6
+8 - Otwórz nowy terminal
+9 - Wysyłaj response tak jak pokazano wcześniej albo ręcznie albo używając jakiegoś skryptu
+------------------------------------------------------------------------------------------------------------------------------------

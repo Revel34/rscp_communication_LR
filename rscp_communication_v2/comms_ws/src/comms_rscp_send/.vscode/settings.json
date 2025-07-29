@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/revel34/comms_ws/install/communication/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp1/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_basic/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/revel34/comms_ws/install/communication/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp1/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_rscp/lib/python3.10/site-packages",
+        "/home/revel34/comms_ws/install/comms_basic/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

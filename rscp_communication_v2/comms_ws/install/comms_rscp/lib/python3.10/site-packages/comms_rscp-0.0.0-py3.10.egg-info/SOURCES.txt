@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/comms_rscp/comms_rscp.egg-info/PKG-INFO
+../../build/comms_rscp/comms_rscp.egg-info/SOURCES.txt
+../../build/comms_rscp/comms_rscp.egg-info/dependency_links.txt
+../../build/comms_rscp/comms_rscp.egg-info/entry_points.txt
+../../build/comms_rscp/comms_rscp.egg-info/requires.txt
+../../build/comms_rscp/comms_rscp.egg-info/top_level.txt
+../../build/comms_rscp/comms_rscp.egg-info/zip-safe
+comms_rscp/RSCP.py
+comms_rscp/__init__.py
+resource/comms_rscp
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

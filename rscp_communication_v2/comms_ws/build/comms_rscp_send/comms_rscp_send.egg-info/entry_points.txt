@@ -1,0 +1,3 @@
+[console_scripts]
+rscp_response_node = comms_rscp_send.rscp_response_node:main
+

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/comms_rscp_send/comms_rscp_send.egg-info
+writing ../../build/comms_rscp_send/comms_rscp_send.egg-info/PKG-INFO
+writing dependency_links to ../../build/comms_rscp_send/comms_rscp_send.egg-info/dependency_links.txt
+writing entry points to ../../build/comms_rscp_send/comms_rscp_send.egg-info/entry_points.txt
+writing requirements to ../../build/comms_rscp_send/comms_rscp_send.egg-info/requires.txt
+writing top-level names to ../../build/comms_rscp_send/comms_rscp_send.egg-info/top_level.txt
+writing manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+reading manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+writing manifest file '../../build/comms_rscp_send/comms_rscp_send.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+copying comms_rscp_send/rscp_response_node.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+copying comms_rscp_send/__init__.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send
+running install
+running install_lib
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+copying /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send/rscp_response_node.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+copying /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build/lib/comms_rscp_send/__init__.py -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send
+byte-compiling /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send/rscp_response_node.py to rscp_response_node.cpython-310.pyc
+byte-compiling /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index
+creating /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index/packages
+copying resource/comms_rscp_send -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/ament_index/resource_index/packages
+copying package.xml -> /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send
+running install_egg_info
+Copying ../../build/comms_rscp_send/comms_rscp_send.egg-info to /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages/comms_rscp_send-0.0.0-py3.10.egg-info
+running install_scripts
+Installing rscp_response_node script to /home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/comms_rscp_send
+writing list of installed files to '/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log'

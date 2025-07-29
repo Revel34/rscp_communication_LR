@@ -1,0 +1,176 @@
+[0.207s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.207s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8f00bd90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8f00b7c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8f00b7c0>>, mixin_verb=('build',))
+[0.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.567s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/legendary/eric_anatolian/rscp_communication/comms_ws'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp) by extension 'ros'
+[0.623s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comms_rscp' with type 'ros.ament_python' and name 'comms_rscp'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extensions ['ignore', 'ignore_ament_install']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extension 'ignore'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/comms_rscp_send) by extension 'ros'
+[0.625s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comms_rscp_send' with type 'ros.ament_python' and name 'comms_rscp_send'
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.661s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.666s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 440 installed packages in /opt/ros/humble
+[0.669s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_target' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_clean_first' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'cmake_force_configure' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'ament_cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.757s] DEBUG:colcon.colcon_core.verb:Building package 'comms_rscp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp', 'merge_install': False, 'path': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp', 'symlink_install': False, 'test_result_base': None}
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_target' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_clean_cache' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_clean_first' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'cmake_force_configure' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'ament_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'catkin_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'comms_rscp_send' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.758s] DEBUG:colcon.colcon_core.verb:Building package 'comms_rscp_send' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send', 'merge_install': False, 'path': '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send', 'symlink_install': False, 'test_result_base': None}
+[0.758s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.760s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.761s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp' with build type 'ament_python'
+[0.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('comms_rscp', 'ament_prefix_path')
+[0.764s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/ament_prefix_path.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/ament_prefix_path.dsv'
+[0.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/ament_prefix_path.sh'
+[0.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.774s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send' with build type 'ament_python'
+[0.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('comms_rscp_send', 'ament_prefix_path')
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/ament_prefix_path.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/ament_prefix_path.dsv'
+[0.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/ament_prefix_path.sh'
+[0.778s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.778s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.325s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp'
+[1.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.876s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send'
+[1.876s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.876s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/install.log --single-version-externally-managed install_data
+[2.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp_send build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log --single-version-externally-managed install_data
+[3.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp' returned '0': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp/install.log --single-version-externally-managed install_data
+[3.273s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp' for CMake module files
+[3.276s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp' for CMake config files
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/lib'
+[3.279s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/bin'
+[3.279s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/lib/pkgconfig/comms_rscp.pc'
+[3.280s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/lib/python3.10/site-packages'
+[3.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('comms_rscp', 'pythonpath')
+[3.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/pythonpath.ps1'
+[3.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/pythonpath.dsv'
+[3.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/hook/pythonpath.sh'
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/bin'
+[3.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(comms_rscp)
+[3.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/package.ps1'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/package.dsv'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/package.sh'
+[3.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/package.bash'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/comms_rscp/package.zsh'
+[3.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp/share/colcon-core/packages/comms_rscp)
+[3.301s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send' for CMake module files
+[3.303s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send' for CMake config files
+[3.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/legendary/eric_anatolian/rscp_communication/comms_ws/src/comms_rscp_send' returned '0': PYTHONPATH=/home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/comms_rscp_send build --build-base /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/build install --record /home/legendary/eric_anatolian/rscp_communication/comms_ws/build/comms_rscp_send/install.log --single-version-externally-managed install_data
+[3.306s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib'
+[3.306s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/bin'
+[3.307s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/pkgconfig/comms_rscp_send.pc'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/lib/python3.10/site-packages'
+[3.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('comms_rscp_send', 'pythonpath')
+[3.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/pythonpath.ps1'
+[3.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/pythonpath.dsv'
+[3.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/hook/pythonpath.sh'
+[3.315s] Level 1:colcon.colcon_core.environment:checking '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/bin'
+[3.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(comms_rscp_send)
+[3.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/package.ps1'
+[3.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/package.dsv'
+[3.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/package.sh'
+[3.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/package.bash'
+[3.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/comms_rscp_send/package.zsh'
+[3.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/comms_rscp_send/share/colcon-core/packages/comms_rscp_send)
+[3.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.326s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.326s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.326s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.340s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.341s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.341s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.369s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.370s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/local_setup.ps1'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/_local_setup_util_ps1.py'
+[3.379s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/setup.ps1'
+[3.382s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/local_setup.sh'
+[3.384s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/_local_setup_util_sh.py'
+[3.386s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/setup.sh'
+[3.389s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/local_setup.bash'
+[3.391s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/setup.bash'
+[3.394s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/local_setup.zsh'
+[3.395s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/legendary/eric_anatolian/rscp_communication/comms_ws/install/setup.zsh'
