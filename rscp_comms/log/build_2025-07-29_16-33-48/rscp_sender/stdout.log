@@ -1,0 +1,34 @@
+running egg_info
+creating ../../build/rscp_sender/rscp_sender.egg-info
+writing ../../build/rscp_sender/rscp_sender.egg-info/PKG-INFO
+writing dependency_links to ../../build/rscp_sender/rscp_sender.egg-info/dependency_links.txt
+writing entry points to ../../build/rscp_sender/rscp_sender.egg-info/entry_points.txt
+writing requirements to ../../build/rscp_sender/rscp_sender.egg-info/requires.txt
+writing top-level names to ../../build/rscp_sender/rscp_sender.egg-info/top_level.txt
+writing manifest file '../../build/rscp_sender/rscp_sender.egg-info/SOURCES.txt'
+reading manifest file '../../build/rscp_sender/rscp_sender.egg-info/SOURCES.txt'
+writing manifest file '../../build/rscp_sender/rscp_sender.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build
+creating /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib
+creating /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib/rscp_sender
+copying rscp_sender/sender.py -> /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib/rscp_sender
+copying rscp_sender/__init__.py -> /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib/rscp_sender
+running install
+running install_lib
+creating /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender
+copying /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib/rscp_sender/sender.py -> /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender
+copying /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build/lib/rscp_sender/__init__.py -> /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender
+byte-compiling /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender/sender.py to sender.cpython-310.pyc
+byte-compiling /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/share/ament_index
+creating /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/share/ament_index/resource_index
+creating /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/share/ament_index/resource_index/packages
+copying resource/rscp_sender -> /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/share/ament_index/resource_index/packages
+copying package.xml -> /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/share/rscp_sender
+running install_egg_info
+Copying ../../build/rscp_sender/rscp_sender.egg-info to /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/install.log'

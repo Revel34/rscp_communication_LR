@@ -1,0 +1,20 @@
+[0.563s] Invoking command in '/home/revel34/rscp_communication_v3/rscp_comms/src/rscp_sender': PYTHONPATH=/home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_sender build --build-base /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build install --record /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/install.log --single-version-externally-managed install_data
+[0.708s] running egg_info
+[0.709s] writing ../../build/rscp_sender/rscp_sender.egg-info/PKG-INFO
+[0.709s] writing dependency_links to ../../build/rscp_sender/rscp_sender.egg-info/dependency_links.txt
+[0.709s] writing entry points to ../../build/rscp_sender/rscp_sender.egg-info/entry_points.txt
+[0.709s] writing requirements to ../../build/rscp_sender/rscp_sender.egg-info/requires.txt
+[0.709s] writing top-level names to ../../build/rscp_sender/rscp_sender.egg-info/top_level.txt
+[0.710s] reading manifest file '../../build/rscp_sender/rscp_sender.egg-info/SOURCES.txt'
+[0.710s] writing manifest file '../../build/rscp_sender/rscp_sender.egg-info/SOURCES.txt'
+[0.711s] running build
+[0.711s] running build_py
+[0.711s] running install
+[0.711s] running install_lib
+[0.712s] running install_data
+[0.712s] running install_egg_info
+[0.713s] removing '/home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender-0.0.0-py3.10.egg-info' (and everything under it)
+[0.713s] Copying ../../build/rscp_sender/rscp_sender.egg-info to /home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages/rscp_sender-0.0.0-py3.10.egg-info
+[0.714s] running install_scripts
+[0.725s] writing list of installed files to '/home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/install.log'
+[0.740s] Invoked command in '/home/revel34/rscp_communication_v3/rscp_comms/src/rscp_sender' returned '0': PYTHONPATH=/home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_v3/rscp_comms/install/rscp_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_sender build --build-base /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/build install --record /home/revel34/rscp_communication_v3/rscp_comms/build/rscp_sender/install.log --single-version-externally-managed install_data
