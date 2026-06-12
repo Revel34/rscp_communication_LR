@@ -1,0 +1,3 @@
+[console_scripts]
+rscp_bridge_node = rscp_bridge_node.rscp_bridge_node:main
+
