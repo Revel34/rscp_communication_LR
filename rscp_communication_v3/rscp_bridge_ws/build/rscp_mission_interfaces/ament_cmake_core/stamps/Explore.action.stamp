@@ -1,0 +1,7 @@
+# Goal: begin exploration (e.g. of the lava tube). No parameters.
+---
+# Result
+bool success
+---
+# Feedback: distance measurement to stream back to the host, in metres
+float64 distance

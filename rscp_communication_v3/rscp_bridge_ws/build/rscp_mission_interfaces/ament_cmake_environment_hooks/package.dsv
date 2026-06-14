@@ -1,0 +1,4 @@
+source;share/rscp_mission_interfaces/local_setup.bash
+source;share/rscp_mission_interfaces/local_setup.dsv
+source;share/rscp_mission_interfaces/local_setup.sh
+source;share/rscp_mission_interfaces/local_setup.zsh

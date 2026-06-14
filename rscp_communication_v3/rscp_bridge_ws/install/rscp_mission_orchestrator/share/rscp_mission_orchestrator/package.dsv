@@ -1,0 +1,6 @@
+source;share/rscp_mission_orchestrator/hook/pythonpath.ps1
+source;share/rscp_mission_orchestrator/hook/pythonpath.dsv
+source;share/rscp_mission_orchestrator/hook/pythonpath.sh
+source;share/rscp_mission_orchestrator/hook/ament_prefix_path.ps1
+source;share/rscp_mission_orchestrator/hook/ament_prefix_path.dsv
+source;share/rscp_mission_orchestrator/hook/ament_prefix_path.sh

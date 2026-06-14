@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rscp_mission_interfaces__rs",
+		"source" : "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rscp_mission_interfaces__rs"
+	}
+}

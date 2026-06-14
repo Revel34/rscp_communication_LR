@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/explore__type_support.c.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/explore__type_support.c.o.d"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support.c.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support.c.o.d"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/search_area__type_support.c.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/search_area__type_support.c.o.d"
+  "librscp_mission_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "librscp_mission_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/explore__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/explore__type_support.c"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/navigate_to_gps__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support.c"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/search_area__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/rscp_mission_interfaces/action/detail/search_area__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-93a38cffe68580dd14a3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "rscp_mission_interfaces__py",
+					"jsonFile" : "directory-rscp_mission_interfaces__py-f2878b1f3ac6209e1c1d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rscp_mission_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "rscp_mission_interfaces__rs",
+					"jsonFile" : "directory-rscp_mission_interfaces__rs-2912058979644a1e76bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rscp_mission_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "rscp_mission_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rscp_mission_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rscp_mission_interfaces_egg-924756ca8c8cbc760a5d.json",
+					"name" : "ament_cmake_python_build_rscp_mission_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rscp_mission_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rscp_mission_interfaces-628cb2d05561909dbc84.json",
+					"name" : "ament_cmake_python_copy_rscp_mission_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces-3bb6b9b12d7ce0100940.json",
+					"name" : "rscp_mission_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__cpp-e6214dcd7e4078d34072.json",
+					"name" : "rscp_mission_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rscp_mission_interfaces__py::@992ac805058f461cfd47",
+					"jsonFile" : "target-rscp_mission_interfaces__py-d5033ad9e1bd4324b385.json",
+					"name" : "rscp_mission_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_generator_c-73fdcafcddb8a2361692.json",
+					"name" : "rscp_mission_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_generator_py-af3771879d99a2f340cb.json",
+					"name" : "rscp_mission_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_c-11a731a560acd90394a8.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_c__pyext-cde5dc86901b782bd6b5.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_cpp-43f7e62481d53fa7bfb5.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_fastrtps_c-6b030dda723cfa0b5cf2.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext-da7c0080e0b1f5ba44d2.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_fastrtps_cpp-eba19b287950a7c591f6.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_introspection_c-a64acbca516caff845b8.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext-fc4debfb3aa30bb5ad1e.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces__rosidl_typesupport_introspection_cpp-13475ff4045879697f1a.json",
+					"name" : "rscp_mission_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rscp_mission_interfaces__rs::@eb2c57e6f8ea6dd40c6a",
+					"jsonFile" : "target-rscp_mission_interfaces__rs-134ce9775a51f2a2d70e.json",
+					"name" : "rscp_mission_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rscp_mission_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rscp_mission_interfaces_uninstall-3fbf5a109f9a57eaa853.json",
+					"name" : "rscp_mission_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dbdfbef495299e4bb403.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces",
+		"source" : "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

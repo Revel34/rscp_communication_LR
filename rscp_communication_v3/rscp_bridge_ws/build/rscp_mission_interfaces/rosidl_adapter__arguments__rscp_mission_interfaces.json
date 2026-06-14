@@ -1,0 +1,8 @@
+{
+  "package_name": "rscp_mission_interfaces",
+  "non_idl_tuples": [
+    "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces:action/SearchArea.action",
+    "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces:action/NavigateToGPS.action",
+    "/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces:action/Explore.action"
+  ]
+}

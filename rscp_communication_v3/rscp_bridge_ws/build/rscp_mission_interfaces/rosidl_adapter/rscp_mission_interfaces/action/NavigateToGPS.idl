@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from rscp_mission_interfaces/action/NavigateToGPS.action
+// generated code does not contain a copyright notice
+
+
+module rscp_mission_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: drive to a GPS coordinate (the worker converts this to the map frame" "\n"
+      "and forwards it to Nav2 internally)")
+    struct NavigateToGPS_Goal {
+      double lat;
+
+      double lon;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct NavigateToGPS_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback: straight-line distance remaining to the goal, in metres")
+    struct NavigateToGPS_Feedback {
+      double distance_remaining;
+    };
+  };
+};

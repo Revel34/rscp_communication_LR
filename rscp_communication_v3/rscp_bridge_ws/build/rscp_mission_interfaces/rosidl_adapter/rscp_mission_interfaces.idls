@@ -1,0 +1,3 @@
+/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rosidl_adapter/rscp_mission_interfaces:action/SearchArea.idl
+/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rosidl_adapter/rscp_mission_interfaces:action/NavigateToGPS.idl
+/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/rosidl_adapter/rscp_mission_interfaces:action/Explore.idl

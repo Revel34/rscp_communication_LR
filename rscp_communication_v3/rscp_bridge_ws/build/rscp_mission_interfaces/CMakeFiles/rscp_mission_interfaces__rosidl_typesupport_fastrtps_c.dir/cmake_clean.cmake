@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/explore__type_support_c.cpp.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/explore__type_support_c.cpp.o.d"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support_c.cpp.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support_c.cpp.o.d"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/search_area__type_support_c.cpp.o"
+  "CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/search_area__type_support_c.cpp.o.d"
+  "librscp_mission_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "librscp_mission_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/explore__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/explore__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/navigate_to_gps__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/navigate_to_gps__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/search_area__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/rscp_mission_interfaces/action/detail/search_area__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

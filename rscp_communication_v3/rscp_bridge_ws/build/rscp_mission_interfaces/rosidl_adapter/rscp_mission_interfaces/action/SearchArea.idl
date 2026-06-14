@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from rscp_mission_interfaces/action/SearchArea.action
+// generated code does not contain a copyright notice
+
+
+module rscp_mission_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: search within a radius around a center coordinate")
+    struct SearchArea_Goal {
+      double lat;
+
+      double lon;
+
+      double radius;
+    };
+    @verbatim (language="comment", text=
+      "Result: the coordinate of interest that was found (e.g. peak / coldest point)")
+    struct SearchArea_Result {
+      double found_lat;
+
+      double found_lon;
+
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback: current rover position while searching")
+    struct SearchArea_Feedback {
+      double current_lat;
+
+      double current_lon;
+    };
+  };
+};

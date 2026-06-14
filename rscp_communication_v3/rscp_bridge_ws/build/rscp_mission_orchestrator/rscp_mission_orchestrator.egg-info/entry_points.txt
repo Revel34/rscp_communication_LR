@@ -1,0 +1,3 @@
+[console_scripts]
+mission_orchestrator = rscp_mission_orchestrator.mission_orchestrator:main
+

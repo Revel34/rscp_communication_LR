@@ -1,0 +1,10 @@
+# Goal: drive to a GPS coordinate (the worker converts this to the map frame
+# and forwards it to Nav2 internally)
+float64 lat
+float64 lon
+---
+# Result
+bool success
+---
+# Feedback: straight-line distance remaining to the goal, in metres
+float64 distance_remaining

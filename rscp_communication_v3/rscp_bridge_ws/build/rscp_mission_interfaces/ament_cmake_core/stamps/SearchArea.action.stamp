@@ -1,0 +1,13 @@
+# Goal: search within a radius around a center coordinate
+float64 lat
+float64 lon
+float64 radius
+---
+# Result: the coordinate of interest that was found (e.g. peak / coldest point)
+float64 found_lat
+float64 found_lon
+bool success
+---
+# Feedback: current rover position while searching
+float64 current_lat
+float64 current_lon
