@@ -84,21 +84,19 @@ class RscpBridgeNode(Node):
         # ---- Parameters -----------------------------------------------------
         self.declare_parameter("port", "/dev/ttyUSB0")
         self.declare_parameter("baudrate", 115200)
-        self.declare_parameter("read_rate_hz", 50.0)
-        self.declare_parameter("serial_timeout", 0.0)  # non-blocking reads
+        self.declare_parameter("serial_timeout", 0.1)  # blocking read timeout (s)
         self.declare_parameter("reconnect_period_sec", 2.0)
 
         self._port = self.get_parameter("port").value
         self._baudrate = int(self.get_parameter("baudrate").value)
-        self._read_rate_hz = float(self.get_parameter("read_rate_hz").value)
         self._serial_timeout = float(self.get_parameter("serial_timeout").value)
         self._reconnect_period = float(self.get_parameter("reconnect_period_sec").value)
 
         # ---- State ----------------------------------------------------------
         self._ser = None
         self._rx_buffer = bytearray()
-        self._serial_lock = threading.Lock()  # guards all reads/writes to _ser
-        self._sec_since_reconnect_try = 0.0
+        self._serial_lock = threading.Lock()  # guards writes to _ser
+        self._stop = threading.Event()
 
         # ---- ROS2 interface -------------------------------------------------
         # Inbound (Host -> ROS2). Keep a small depth; commands are infrequent.
@@ -108,14 +106,18 @@ class RscpBridgeNode(Node):
             String, "rover_missions/send_rscp", self._on_send, 50
         )
 
-        # ---- Serial + read timer -------------------------------------------
+        # ---- Serial read thread --------------------------------------------
+        # A dedicated daemon thread does nothing but block on serial reads, so
+        # no bytes are ever missed. This is far more reliable than reading from
+        # a ROS2 timer, which only fires when the executor is free.
         self._connect_serial()
-        period = 1.0 / self._read_rate_hz if self._read_rate_hz > 0 else 0.02
-        self._timer = self.create_timer(period, self._on_timer)
+        self._reader_thread = threading.Thread(
+            target=self._serial_listener, daemon=True
+        )
+        self._reader_thread.start()
 
         self.get_logger().info(
-            f"RSCP bridge started. port={self._port} baud={self._baudrate} "
-            f"read_rate={self._read_rate_hz}Hz"
+            f"RSCP bridge started. port={self._port} baud={self._baudrate}"
         )
         self.get_logger().info(
             "Listening Host->ROS2 on 'rover_missions/recv_rscp', "
@@ -126,19 +128,53 @@ class RscpBridgeNode(Node):
     # Serial connection management
     # ========================================================================
     def _connect_serial(self) -> bool:
-        """(Re)open the serial port. Returns True on success. Never raises."""
+        """(Re)open the serial port. Returns True on success. Never raises.
+
+        On real USB-UART hardware the *way* the port is opened matters:
+          * We build the Serial object WITHOUT a port first, set dtr/rts low,
+            then open() — this prevents pyserial from pulsing DTR/RTS high on
+            open, which otherwise resets or confuses many adapters (CP2102,
+            CH340, FTDI) and the ESP32, dropping the first frames.
+          * We flush the input buffer after opening so stale bytes left in the
+            OS/driver buffer don't corrupt the first COBS frame.
+          * A small non-zero read timeout is more reliable than timeout=0 with
+            in_waiting on physical UARTs.
+        """
         with self._serial_lock:
             if self._ser is not None and self._ser.is_open:
                 return True
             try:
-                self._ser = serial.Serial(
-                    port=self._port,
-                    baudrate=self._baudrate,
-                    timeout=self._serial_timeout,
-                    write_timeout=1.0,
-                )
+                ser = serial.Serial()
+                ser.port = self._port
+                ser.baudrate = self._baudrate
+                # Blocking read timeout: the dedicated reader thread blocks here
+                # when idle, so reads never busy-spin and never miss bytes.
+                ser.timeout = self._serial_timeout if self._serial_timeout > 0 else 0.1
+                ser.write_timeout = 1.0
+                # Do NOT pulse modem-control lines high on open. Setting them
+                # before open() avoids the reset glitch on adapters/ESP32.
+                try:
+                    ser.dtr = False
+                    ser.rts = False
+                except (OSError, ValueError, AttributeError):
+                    pass
+
+                ser.open()
+
+                # Discard any stale bytes buffered before we connected, so a
+                # partial pre-existing frame can't corrupt the first decode.
+                try:
+                    ser.reset_input_buffer()
+                    ser.reset_output_buffer()
+                except (OSError, serial.SerialException):
+                    pass
+
+                self._ser = ser
                 self._rx_buffer.clear()
-                self.get_logger().info(f"Serial port {self._port} opened.")
+                self.get_logger().info(
+                    f"Serial port {self._port} opened @ {self._baudrate} baud "
+                    f"(dtr/rts held low, buffers flushed)."
+                )
                 return True
             except (serial.SerialException, OSError, ValueError) as exc:
                 self._ser = None
@@ -152,48 +188,53 @@ class RscpBridgeNode(Node):
         return self._ser is not None and self._ser.is_open
 
     # ========================================================================
-    # Inbound:  Serial (Host) -> ROS2
+    # Inbound:  Serial (Host) -> ROS2   (runs in a dedicated daemon thread)
     # ========================================================================
-    def _on_timer(self):
-        """High-frequency, non-blocking serial pump driven by a ROS2 timer."""
-        if not self._serial_ok():
-            # Throttled reconnect attempts so we don't spin the OS open() call.
-            self._sec_since_reconnect_try += (
-                1.0 / self._read_rate_hz if self._read_rate_hz > 0 else 0.02
-            )
-            if self._sec_since_reconnect_try >= self._reconnect_period:
-                self._sec_since_reconnect_try = 0.0
+    def _serial_listener(self):
+        """Dedicated thread: continuously read the serial port and process
+        frames. Blocking reads (with the small open() timeout) mean no bytes
+        are missed. Reconnects automatically if the port drops."""
+        while not self._stop.is_set() and rclpy.ok():
+            if not self._serial_ok():
+                # Port not open — wait, then try to reconnect.
+                if self._stop.wait(self._reconnect_period):
+                    break
                 self._connect_serial()
-            return
+                continue
 
-        # Read everything currently available without blocking the executor.
-        try:
-            with self._serial_lock:
-                n = self._ser.in_waiting
-                chunk = self._ser.read(n) if n else b""
-        except (serial.SerialException, OSError) as exc:
-            self.get_logger().error(f"Serial read failed: {exc}. Closing port.")
-            self._close_serial()
-            return
+            # Read whatever is available; read(1) honours the open() timeout
+            # and blocks briefly when idle, so this loop never busy-spins.
+            try:
+                ser = self._ser
+                if ser is None:
+                    continue
+                n = ser.in_waiting
+                chunk = ser.read(n if n else 1)
+            except (serial.SerialException, OSError, TypeError) as exc:
+                self.get_logger().error(f"Serial read failed: {exc}. Reconnecting.")
+                self._close_serial()
+                continue
 
-        if chunk:
+            if not chunk:
+                continue
+
             self._rx_buffer.extend(chunk)
             self._drain_buffer()
 
-        # Corruption guard: a buffer this large with no delimiter is junk.
-        if len(self._rx_buffer) > MAX_BUFFER_BYTES:
-            self.get_logger().warn(
-                f"RX buffer exceeded {MAX_BUFFER_BYTES} bytes with no frame "
-                f"delimiter; discarding to resynchronise."
-            )
-            self._rx_buffer.clear()
+            # Corruption guard: a huge buffer with no delimiter is junk.
+            if len(self._rx_buffer) > MAX_BUFFER_BYTES:
+                self.get_logger().warn(
+                    f"RX buffer exceeded {MAX_BUFFER_BYTES} bytes with no frame "
+                    f"delimiter; discarding to resynchronise."
+                )
+                self._rx_buffer.clear()
 
     def _drain_buffer(self):
         """Split the reassembly buffer on 0x00 and process each complete frame."""
         while True:
             idx = self._rx_buffer.find(FRAME_DELIMITER)
             if idx == -1:
-                break  # no complete frame yet; keep partial bytes for next tick
+                break  # no complete frame yet; keep partial bytes for next read
             frame = bytes(self._rx_buffer[:idx])
             del self._rx_buffer[: idx + 1]  # drop frame + delimiter
             if frame:  # skip empty frames (e.g. back-to-back 0x00)
@@ -345,6 +386,9 @@ class RscpBridgeNode(Node):
 
     def destroy_node(self):
         self.get_logger().info("Shutting down RSCP bridge; closing serial port.")
+        self._stop.set()
+        if self._reader_thread is not None:
+            self._reader_thread.join(timeout=2.0)
         self._close_serial()
         super().destroy_node()
 
