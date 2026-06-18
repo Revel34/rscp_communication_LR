@@ -10,8 +10,8 @@
 #
 # EDIT THESE VALUES to match your setup:
 ROS_DISTRO_SETUP="/opt/ros/humble/setup.bash"
-WORKSPACE_DIR="$HOME/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws"
-SERIAL_PORT="/dev/pts/1"
+WORKSPACE_DIR="$HOME/rscp_communication_v3/rscp_bridge_ws"
+SERIAL_PORT="/dev/ttyUSB0"
 BAUDRATE="115200"
 # ---------------------------------------------------------------------------
 

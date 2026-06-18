@@ -77,12 +77,10 @@ all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.di
 all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all
 all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/all
 all: rscp_mission_interfaces__py/all
-all: rscp_mission_interfaces__rs/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: rscp_mission_interfaces__py/preinstall
-preinstall: rscp_mission_interfaces__rs/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -104,7 +102,6 @@ clean: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.
 clean: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/clean
 clean: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/clean
 clean: rscp_mission_interfaces__py/clean
-clean: rscp_mission_interfaces__rs/clean
 .PHONY : clean
 
 #=============================================================================
@@ -121,21 +118,6 @@ rscp_mission_interfaces__py/preinstall:
 # Recursive "clean" directory target.
 rscp_mission_interfaces__py/clean: rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/clean
 .PHONY : rscp_mission_interfaces__py/clean
-
-#=============================================================================
-# Directory level rules for directory rscp_mission_interfaces__rs
-
-# Recursive "all" directory target.
-rscp_mission_interfaces__rs/all: rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/all
-.PHONY : rscp_mission_interfaces__rs/all
-
-# Recursive "preinstall" directory target.
-rscp_mission_interfaces__rs/preinstall:
-.PHONY : rscp_mission_interfaces__rs/preinstall
-
-# Recursive "clean" directory target.
-rscp_mission_interfaces__rs/clean: rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/clean
-.PHONY : rscp_mission_interfaces__rs/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -201,7 +183,6 @@ CMakeFiles/rscp_mission_interfaces.dir/all: CMakeFiles/rscp_mission_interfaces__
 CMakeFiles/rscp_mission_interfaces.dir/all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/rscp_mission_interfaces.dir/all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/rscp_mission_interfaces.dir/all: CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_cpp.dir/all
-CMakeFiles/rscp_mission_interfaces.dir/all: rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rscp_mission_interfaces.dir/build.make CMakeFiles/rscp_mission_interfaces.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rscp_mission_interfaces.dir/build.make CMakeFiles/rscp_mission_interfaces.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles --progress-num= "Built target rscp_mission_interfaces"
@@ -209,7 +190,7 @@ CMakeFiles/rscp_mission_interfaces.dir/all: rscp_mission_interfaces__rs/CMakeFil
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rscp_mission_interfaces.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rscp_mission_interfaces.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/rscp_mission_interfaces.dir/rule
@@ -497,7 +478,7 @@ CMakeFiles/rscp_mission_interfaces__rosidl_generator_py.dir/all: rscp_mission_in
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rscp_mission_interfaces__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rscp_mission_interfaces__rosidl_generator_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/rscp_mission_interfaces__rosidl_generator_py.dir/rule
@@ -527,7 +508,7 @@ CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rule
@@ -557,7 +538,7 @@ CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.di
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -586,7 +567,7 @@ CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/all: rscp_mi
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : CMakeFiles/rscp_mission_interfaces__rosidl_typesupport_c__pyext.dir/rule
@@ -612,7 +593,7 @@ rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/all: CMak
 
 # Build rule for subdir invocation for target.
 rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
 .PHONY : rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/rule
@@ -625,32 +606,6 @@ rscp_mission_interfaces__py: rscp_mission_interfaces__py/CMakeFiles/rscp_mission
 rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/clean:
 	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/build.make rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/clean
 .PHONY : rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/clean
-
-#=============================================================================
-# Target rules for target rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir
-
-# All Build rule for target.
-rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/all:
-	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build.make rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/depend
-	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build.make rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles --progress-num=48 "Built target rscp_mission_interfaces__rs"
-.PHONY : rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/all
-
-# Build rule for subdir invocation for target.
-rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces/CMakeFiles 0
-.PHONY : rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/rule
-
-# Convenience name for target.
-rscp_mission_interfaces__rs: rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/rule
-.PHONY : rscp_mission_interfaces__rs
-
-# clean rule for target.
-rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build.make rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/clean
-.PHONY : rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

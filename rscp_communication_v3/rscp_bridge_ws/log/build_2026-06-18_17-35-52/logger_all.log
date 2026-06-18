@@ -1,0 +1,248 @@
+[0.138s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.138s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77733e452bc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77733e567b50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77733e567b50>>, mixin_verb=('build',))
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.362s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extensions ['colcon_pkg']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extension 'colcon_pkg'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extensions ['colcon_meta']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_bridge_node) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rscp_bridge_node' with type 'ros.ament_python' and name 'rscp_bridge_node'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extensions ['colcon_meta']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extension 'colcon_meta'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extensions ['ros']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_interfaces) by extension 'ros'
+[0.383s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rscp_mission_interfaces' with type 'ros.ament_cmake' and name 'rscp_mission_interfaces'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extension 'ignore'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extension 'ignore_ament_install'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extensions ['colcon_pkg']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extension 'colcon_pkg'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extensions ['colcon_meta']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extension 'colcon_meta'
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extensions ['ros']
+[0.384s] Level 1:colcon.colcon_core.package_identification:_identify(src/rscp_mission_orchestrator) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rscp_mission_orchestrator' with type 'ros.ament_python' and name 'rscp_mission_orchestrator'
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.427s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/humble
+[0.429s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_target' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_bridge_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'rscp_bridge_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node', 'merge_install': False, 'path': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node', 'symlink_install': False, 'test_result_base': None}
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'rscp_mission_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces', 'merge_install': False, 'path': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_target' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_clean_first' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'cmake_force_configure' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'rscp_mission_orchestrator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'rscp_mission_orchestrator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator', 'merge_install': False, 'path': '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_orchestrator', 'symlink_install': False, 'test_result_base': None}
+[0.493s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.495s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces' with build type 'ament_cmake'
+[0.495s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_interfaces'
+[0.499s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.499s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.499s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.503s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node' with build type 'ament_python'
+[0.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_bridge_node', 'ament_prefix_path')
+[0.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/ament_prefix_path.ps1'
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/ament_prefix_path.dsv'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/ament_prefix_path.sh'
+[0.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces -- -j2 -l2
+[1.076s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node'
+[1.077s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.077s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces -- -j2 -l2
+[1.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces
+[1.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node': PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_bridge_node build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log --single-version-externally-managed install_data
+[1.783s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rscp_mission_interfaces)
+[1.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_interfaces
+[1.786s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces' for CMake module files
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces' for CMake config files
+[1.788s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_interfaces', 'cmake_prefix_path')
+[1.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.ps1'
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.dsv'
+[1.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.sh'
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib'
+[1.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_interfaces', 'ld_library_path_lib')
+[1.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.ps1'
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.dsv'
+[1.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.sh'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/bin'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib/pkgconfig/rscp_mission_interfaces.pc'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib/python3.10/site-packages'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/bin'
+[1.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.ps1'
+[1.797s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.dsv'
+[1.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.sh'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.bash'
+[1.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.zsh'
+[1.801s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/colcon-core/packages/rscp_mission_interfaces)
+[1.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rscp_mission_interfaces)
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces' for CMake module files
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces' for CMake config files
+[1.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_interfaces', 'cmake_prefix_path')
+[1.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.ps1'
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.dsv'
+[1.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/cmake_prefix_path.sh'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib'
+[1.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_interfaces', 'ld_library_path_lib')
+[1.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.ps1'
+[1.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.dsv'
+[1.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/hook/ld_library_path_lib.sh'
+[1.812s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/bin'
+[1.812s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib/pkgconfig/rscp_mission_interfaces.pc'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib/python3.10/site-packages'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/bin'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.ps1'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.dsv'
+[1.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.sh'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.bash'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/rscp_mission_interfaces/package.zsh'
+[1.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/share/colcon-core/packages/rscp_mission_interfaces)
+[1.819s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_orchestrator' with build type 'ament_python'
+[1.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_orchestrator', 'ament_prefix_path')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/ament_prefix_path.ps1'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/ament_prefix_path.dsv'
+[1.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/ament_prefix_path.sh'
+[1.822s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.822s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.259s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_orchestrator'
+[2.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.267s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node' for CMake module files
+[2.268s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node' for CMake config files
+[2.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node' returned '0': PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_bridge_node build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log --single-version-externally-managed install_data
+[2.269s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/bin'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/pkgconfig/rscp_bridge_node.pc'
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages'
+[2.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_bridge_node', 'pythonpath')
+[2.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/pythonpath.ps1'
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/pythonpath.dsv'
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/hook/pythonpath.sh'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/bin'
+[2.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rscp_bridge_node)
+[2.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/package.ps1'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/package.dsv'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/package.sh'
+[2.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/package.bash'
+[2.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/rscp_bridge_node/package.zsh'
+[2.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/share/colcon-core/packages/rscp_bridge_node)
+[2.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_orchestrator': AMENT_PREFIX_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces LD_LIBRARY_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/lib/python3.10/site-packages:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_mission_orchestrator build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/install.log --single-version-externally-managed install_data
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator' for CMake module files
+[3.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_mission_orchestrator' returned '0': AMENT_PREFIX_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces LD_LIBRARY_PATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/lib/python3.10/site-packages:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_mission_orchestrator build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_mission_orchestrator/install.log --single-version-externally-managed install_data
+[3.276s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator' for CMake config files
+[3.277s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/lib'
+[3.277s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/bin'
+[3.277s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/lib/pkgconfig/rscp_mission_orchestrator.pc'
+[3.278s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/lib/python3.10/site-packages'
+[3.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('rscp_mission_orchestrator', 'pythonpath')
+[3.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/pythonpath.ps1'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/pythonpath.dsv'
+[3.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/hook/pythonpath.sh'
+[3.281s] Level 1:colcon.colcon_core.environment:checking '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/bin'
+[3.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rscp_mission_orchestrator)
+[3.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/package.ps1'
+[3.285s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/package.dsv'
+[3.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/package.sh'
+[3.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/package.bash'
+[3.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/rscp_mission_orchestrator/package.zsh'
+[3.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_mission_orchestrator/share/colcon-core/packages/rscp_mission_orchestrator)
+[3.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.290s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.300s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.331s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/local_setup.ps1'
+[3.334s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/_local_setup_util_ps1.py'
+[3.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/setup.ps1'
+[3.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/local_setup.sh'
+[3.345s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/_local_setup_util_sh.py'
+[3.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/setup.sh'
+[3.348s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/local_setup.bash'
+[3.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/setup.bash'
+[3.352s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/local_setup.zsh'
+[3.354s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/setup.zsh'

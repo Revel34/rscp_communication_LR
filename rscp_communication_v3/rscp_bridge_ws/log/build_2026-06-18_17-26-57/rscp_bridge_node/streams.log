@@ -1,0 +1,25 @@
+[2.156s] Invoking command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node': PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_bridge_node build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log --single-version-externally-managed install_data
+[2.547s] running egg_info
+[2.550s] writing ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/PKG-INFO
+[2.550s] writing dependency_links to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/dependency_links.txt
+[2.550s] writing entry points to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/entry_points.txt
+[2.551s] writing requirements to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/requires.txt
+[2.551s] writing top-level names to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/top_level.txt
+[2.557s] reading manifest file '../../build/rscp_bridge_node/rscp_bridge_node.egg-info/SOURCES.txt'
+[2.560s] writing manifest file '../../build/rscp_bridge_node/rscp_bridge_node.egg-info/SOURCES.txt'
+[2.562s] running build
+[2.562s] running build_py
+[2.563s] copying rscp_bridge_node/rscp_bridge_node.py -> /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build/lib/rscp_bridge_node
+[2.563s] running install
+[2.565s] running install_lib
+[2.566s] copying /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build/lib/rscp_bridge_node/rscp_bridge_node.py -> /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node
+[2.568s] byte-compiling /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node/__init__.py to __init__.cpython-310.pyc
+[2.568s] byte-compiling /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node/rscp_bridge_node.py to rscp_bridge_node.cpython-310.pyc
+[2.572s] running install_data
+[2.572s] running install_egg_info
+[2.575s] removing '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node-0.0.0-py3.10.egg-info' (and everything under it)
+[2.576s] Copying ../../build/rscp_bridge_node/rscp_bridge_node.egg-info to /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node-0.0.0-py3.10.egg-info
+[2.578s] running install_scripts
+[2.622s] Installing rscp_bridge_node script to /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/rscp_bridge_node
+[2.624s] writing list of installed files to '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log'
+[2.675s] Invoked command in '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/src/rscp_bridge_node' returned '0': PYTHONPATH=/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rscp_bridge_node build --build-base /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build install --record /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log --single-version-externally-managed install_data

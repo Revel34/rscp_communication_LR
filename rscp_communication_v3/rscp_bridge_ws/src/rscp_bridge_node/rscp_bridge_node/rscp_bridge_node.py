@@ -74,6 +74,11 @@ FRAME_DELIMITER = 0x00
 # drop the buffer rather than grow without bound.
 MAX_BUFFER_BYTES = 8192
 
+# How many bytes to request per read(). serial.read() with a timeout returns
+# as soon as any data is available (up to this many), so a larger value just
+# means fewer syscalls under load — it never blocks waiting to fill the buffer.
+READ_CHUNK_SIZE = 256
+
 
 class RscpBridgeNode(Node):
     """Translator node between the RSCP serial link and the ROS2 network."""
@@ -84,7 +89,7 @@ class RscpBridgeNode(Node):
         # ---- Parameters -----------------------------------------------------
         self.declare_parameter("port", "/dev/ttyUSB0")
         self.declare_parameter("baudrate", 115200)
-        self.declare_parameter("serial_timeout", 0.1)  # blocking read timeout (s)
+        self.declare_parameter("serial_timeout", 0.05)  # blocking read timeout (s)
         self.declare_parameter("reconnect_period_sec", 2.0)
 
         self._port = self.get_parameter("port").value
@@ -130,50 +135,27 @@ class RscpBridgeNode(Node):
     def _connect_serial(self) -> bool:
         """(Re)open the serial port. Returns True on success. Never raises.
 
-        On real USB-UART hardware the *way* the port is opened matters:
-          * We build the Serial object WITHOUT a port first, set dtr/rts low,
-            then open() — this prevents pyserial from pulsing DTR/RTS high on
-            open, which otherwise resets or confuses many adapters (CP2102,
-            CH340, FTDI) and the ESP32, dropping the first frames.
-          * We flush the input buffer after opening so stale bytes left in the
-            OS/driver buffer don't corrupt the first COBS frame.
-          * A small non-zero read timeout is more reliable than timeout=0 with
-            in_waiting on physical UARTs.
+        Opened the same way as the original working node: the plain
+        constructor with a read timeout, then reset_input_buffer(). No DTR/RTS
+        manipulation — on the Geekom's USB-UART this is what works reliably.
         """
         with self._serial_lock:
             if self._ser is not None and self._ser.is_open:
                 return True
             try:
-                ser = serial.Serial()
-                ser.port = self._port
-                ser.baudrate = self._baudrate
-                # Blocking read timeout: the dedicated reader thread blocks here
-                # when idle, so reads never busy-spin and never miss bytes.
-                ser.timeout = self._serial_timeout if self._serial_timeout > 0 else 0.1
-                ser.write_timeout = 1.0
-                # Do NOT pulse modem-control lines high on open. Setting them
-                # before open() avoids the reset glitch on adapters/ESP32.
+                # Match the proven working node:
+                #   serial.Serial(device_path, baudrate, timeout=0.1)
+                timeout = self._serial_timeout if self._serial_timeout > 0 else 0.1
+                ser = serial.Serial(self._port, self._baudrate, timeout=timeout)
                 try:
-                    ser.dtr = False
-                    ser.rts = False
-                except (OSError, ValueError, AttributeError):
-                    pass
-
-                ser.open()
-
-                # Discard any stale bytes buffered before we connected, so a
-                # partial pre-existing frame can't corrupt the first decode.
-                try:
-                    ser.reset_input_buffer()
-                    ser.reset_output_buffer()
+                    ser.reset_input_buffer()  # clear any stale data
                 except (OSError, serial.SerialException):
                     pass
 
                 self._ser = ser
                 self._rx_buffer.clear()
                 self.get_logger().info(
-                    f"Serial port {self._port} opened @ {self._baudrate} baud "
-                    f"(dtr/rts held low, buffers flushed)."
+                    f"Serial port {self._port} opened @ {self._baudrate} baud."
                 )
                 return True
             except (serial.SerialException, OSError, ValueError) as exc:
@@ -192,26 +174,49 @@ class RscpBridgeNode(Node):
     # ========================================================================
     def _serial_listener(self):
         """Dedicated thread: continuously read the serial port and process
-        frames. Blocking reads (with the small open() timeout) mean no bytes
-        are missed. Reconnects automatically if the port drops."""
+        frames, modeled directly on the proven listener that worked reliably.
+
+        Key behaviour: a transient read error does NOT close and reopen the
+        port. The "device reports readiness to read but returned no data"
+        condition is a harmless USB-UART hiccup, not a disconnect — closing and
+        reopening on every occurrence is what caused the reconnect storm. We
+        simply skip and keep reading on the SAME open handle, exactly like the
+        original working node. We only attempt to (re)open when the port is not
+        actually open."""
         while not self._stop.is_set() and rclpy.ok():
             if not self._serial_ok():
-                # Port not open — wait, then try to reconnect.
+                # Port genuinely not open — wait, then try to open it.
                 if self._stop.wait(self._reconnect_period):
                     break
                 self._connect_serial()
                 continue
 
-            # Read whatever is available; read(1) honours the open() timeout
-            # and blocks briefly when idle, so this loop never busy-spins.
             try:
                 ser = self._ser
                 if ser is None:
                     continue
-                n = ser.in_waiting
-                chunk = ser.read(n if n else 1)
-            except (serial.SerialException, OSError, TypeError) as exc:
-                self.get_logger().error(f"Serial read failed: {exc}. Reconnecting.")
+                # Block for the first byte (honours the read timeout when idle),
+                # then immediately drain everything else already in the OS buffer
+                # so we never wait out the timeout with data pending. This keeps
+                # latency at effectively zero once bytes start arriving.
+                first = ser.read(1)
+                if first:
+                    n = ser.in_waiting
+                    chunk = first + (ser.read(n) if n else b"")
+                else:
+                    chunk = b""
+            except serial.SerialException as exc:
+                # Transient readiness/no-data hiccup. Do NOT reconnect — just
+                # skip this read and continue on the same handle, like the
+                # original working node did.
+                self.get_logger().debug(f"Transient serial read hiccup: {exc}")
+                continue
+            except (OSError, TypeError) as exc:
+                # A real OS-level error (cable yanked, device removed) — only
+                # here do we close so the reconnect path can recover.
+                self.get_logger().error(
+                    f"Serial device error: {exc}. Will attempt to reopen."
+                )
                 self._close_serial()
                 continue
 

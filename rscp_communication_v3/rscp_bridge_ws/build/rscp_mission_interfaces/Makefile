@@ -405,19 +405,6 @@ rscp_mission_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/build.make rscp_mission_interfaces__py/CMakeFiles/rscp_mission_interfaces__py.dir/build
 .PHONY : rscp_mission_interfaces__py/fast
 
-#=============================================================================
-# Target rules for targets named rscp_mission_interfaces__rs
-
-# Build rule for target.
-rscp_mission_interfaces__rs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rscp_mission_interfaces__rs
-.PHONY : rscp_mission_interfaces__rs
-
-# fast build rule for target.
-rscp_mission_interfaces__rs/fast:
-	$(MAKE) $(MAKESILENT) -f rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build.make rscp_mission_interfaces__rs/CMakeFiles/rscp_mission_interfaces__rs.dir/build
-.PHONY : rscp_mission_interfaces__rs/fast
-
 rosidl_generator_c/rscp_mission_interfaces/action/detail/explore__functions.o: rosidl_generator_c/rscp_mission_interfaces/action/detail/explore__functions.c.o
 .PHONY : rosidl_generator_c/rscp_mission_interfaces/action/detail/explore__functions.o
 
@@ -1084,7 +1071,6 @@ help:
 	@echo "... rscp_mission_interfaces"
 	@echo "... rscp_mission_interfaces__cpp"
 	@echo "... rscp_mission_interfaces__py"
-	@echo "... rscp_mission_interfaces__rs"
 	@echo "... rscp_mission_interfaces_uninstall"
 	@echo "... uninstall"
 	@echo "... rscp_mission_interfaces__rosidl_generator_c"

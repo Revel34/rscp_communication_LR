@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/dependency_links.txt
+writing entry points to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/entry_points.txt
+writing requirements to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/requires.txt
+writing top-level names to ../../build/rscp_bridge_node/rscp_bridge_node.egg-info/top_level.txt
+reading manifest file '../../build/rscp_bridge_node/rscp_bridge_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/rscp_bridge_node/rscp_bridge_node.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rscp_bridge_node/rscp_bridge_node.py -> /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build/lib/rscp_bridge_node
+running install
+running install_lib
+copying /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/build/lib/rscp_bridge_node/rscp_bridge_node.py -> /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node
+byte-compiling /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node/rscp_bridge_node.py to rscp_bridge_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rscp_bridge_node/rscp_bridge_node.egg-info to /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/python3.10/site-packages/rscp_bridge_node-0.0.0-py3.10.egg-info
+running install_scripts
+Installing rscp_bridge_node script to /home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/install/rscp_bridge_node/lib/rscp_bridge_node
+writing list of installed files to '/home/revel34/rscp_communication_LR/rscp_communication_v3/rscp_bridge_ws/build/rscp_bridge_node/install.log'
